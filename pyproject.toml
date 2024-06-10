@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laminoAlign"
+version = "0.1.0"
+authors = [
+	{name = "Hanna Ruth", email = "hruth@anl.gov"}
+]
+description = "Python software package for aligning projections from laminography experiments"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+        "ffmpeg-python",
+        "h5py",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "psutil",
+        "pympler",
+        "scipy",
+        "scikit-image",
+	"statsmodels",
+	"vtk",
+	"opencv-python"
+]	
+requires-python = ">=3.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]
